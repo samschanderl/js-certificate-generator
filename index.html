@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Certificate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="heading">Get Your Certificate</h1>
+        <form action="" id="form" method="GET" target="certificate.html">
+            <label for="name">Enter Your Name</label>
+            <div class="name-inputs">
+                <input type="text" id="fname" name="fname" placeholder="First Name">
+                <input type="text" id="lname" name="lname" placeholder="Last Name">
+            </div>
+            <label for="course-choices">Choose Your Course</label>
+            <select name="course-choice" id="course-choice">
+                <option value="Baking-Delicious-Pastries">Baking Delicious Pastries</option>
+                <option value="Artisanal-Vegan-Cheese">Artisanal Vegan Cheese</option>
+                <option value="Fine-Dining">Fine Dining</option>
+                <option value="Plating Secrets">Plating Secrets</option>
+            </select>
+            <input class="btn" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="scripts/handleForm.js"></script>
+</body>
+</html>
