@@ -48,6 +48,10 @@ img {
 
 }
 
+.italic {
+    font-style: italic;
+}
+
 /* Custom Styles */
 
 body {
@@ -66,7 +70,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    max-width: 1280px;
+    max-width: 720px;
     border-radius: 10px;
     padding: 25px;
     box-shadow: 0 0 20px 5px rgba(0 0 0/0.1);
@@ -103,6 +107,10 @@ input {
     border-bottom-style: var(--primary);
     background-color: var(--light);
     flex: 1;
+}
+
+input[type=submit] {
+    font-size: 18px;
 }
 
 select {
