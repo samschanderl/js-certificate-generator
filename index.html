@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Your Certificate</title>
     <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
     <div class="form-container">
@@ -24,9 +25,13 @@
                 <option value="Fine-Dining">Fine Dining</option>
                 <option value="Plating Secrets">Plating Secrets</option>
             </select>
-            <input class="btn" type="submit" value="Get Your Certificate">
-            <br><br>
-            <canvas id="canvas" width="463px" height="360px"></canvas>
+            <br>
+            <input id="submit-btn" class="btn" type="submit" value="Get Your Certificate">
+            <a href="#" id="download-btn" class="btn download-btn">Download Your Certificate</a>
+            <br>
+            <div id="loader" class="loader"></div> 
+            <br>
+            <canvas id="canvas" width="1852px" height="1440px"></canvas>
         </form>
     </div>
 

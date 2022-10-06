@@ -34,7 +34,7 @@ img {
   height: auto;
 }
 
-/*  */
+/* Utilities */
 
 .btn {
     background: var(--secondary);
@@ -45,7 +45,28 @@ img {
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+}
 
+.btn:hover {
+    opacity: .9;
+    cursor: pointer;
+}
+.btn:active {
+    transform: scale(.99)
+}
+
+.download-btn {
+    background-color: var(--light);
+    color: var(--secondary);
+    display: none;
+    margin-top: 10px;
+}
+
+.download-btn:hover {
+    color: var(--tertiary)
 }
 
 .italic {
@@ -61,7 +82,7 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background: var(--primary);
+    background: var(--light);
 }
 
 .form-container{
@@ -69,7 +90,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 70%;
     max-width: 720px;
     border-radius: 10px;
     padding: 25px;
@@ -111,70 +132,44 @@ input {
 
 input[type=submit] {
     font-size: 18px;
+    margin-top: 10px;
 }
 
 select {
     padding: 10px;
     border-style: none;
+    background-color: var(--light);
 }
 
-.fname, .lname {
-    width: 50%
+.loader {
+    border: 12px solid #f3f3f3; /* Light grey */
+    border-top: 12px solid var(--secondary); /* Blue */
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s ease-in-out infinite;
+    display: none;
+    margin: 20px auto;
 }
 
-/* Output Container */
-.output-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 25px;
-    background: #fff;
-    width: 50%;
-    max-width: 1280px;
-    border-radius: 10px;
-}
-
-.output-container__heading {
+#download-btn {
     margin-bottom: 20px;
 }
 
-.certificate {
-    width: 100%;
-    background: var(--light);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 30px 15px;
-    margin: 20px 0px;
-    padding-bottom: 25%;
-    padding-top: 25%
+#canvas {
+    display: none;
+    animation: zoomIn .3s ease-in;
 }
 
-.certificate > p {
-    margin-bottom: 10px;
-}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 
-.certificate__heading {
-    font-size: 24px;
-    margin-bottom: 20px;
+@keyframes zoomIn {
+    0% {transform: scale(0)}
+    100% {transform: scale(1)}
 }
-
-.certificate__completion-message {
-    font-style: italic;
-    margin: 15px;
-}
-
-.certificate__course-name,
-.certificate__student-name {
-    font-size: 18px;
-    margin: 15px 0px;
-}
-
-.certificate__date {
-    margin-top: 15px;
-}  
 
 @media (max-width: 720px) {
 
