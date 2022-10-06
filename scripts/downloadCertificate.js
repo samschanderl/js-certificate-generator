@@ -57,19 +57,19 @@ function getUrlParams() {
         return { dateOutput, nameParam, courseParam }
 }
 
-function createHTML() {
-    const { dateOutput, nameParam, courseParam } = getUrlParams()
+// function createHTML() {
+//     const { dateOutput, nameParam, courseParam } = getUrlParams()
 
-    // creating the HTML template for the download
-    const certificateHTML = `
-        <div style="display:flex; flex-direction:column; justify-content:center; background: green;">
-            <p style="font-size:24px">Certificate of Completion</p>
-            <p style="font-size:20px">${nameParam}</p>
-            <p>has successfully completed</p>
-            <p style="font-size:20px">${courseParam}</p>
-            <p>${dateOutput}</p>
-        </div>
-        <a style="background:orange; border-radius:10px; href="" id="download-btn" class="btn">Download</a>
-        `
-    return certificateHTML
+//     // creating the HTML template for the download
+//     const certificateHTML = `
+//         <div style="display:flex; flex-direction:column; justify-content:center; background: green;">
+//             <p style="font-size:24px">Certificate of Completion</p>
+//             <p style="font-size:20px">${nameParam}</p>
+//             <p>has successfully completed</p>
+//             <p style="font-size:20px">${courseParam}</p>
+//             <p>${dateOutput}</p>
+//         </div>
+//         <a style="background:orange; border-radius:10px; href="" id="download-btn" class="btn">Download</a>
+//         `
+//     return certificateHTML
 }
